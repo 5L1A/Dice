@@ -16,10 +16,10 @@ void draw()
         bob.roll();
     }
   } 
-    fill(0, 102, 153, 204);
+    fill(90, 102, 153, 204);
     rect(0, 360, 370, 30);
-    fill(0, 952, 333, 204);
-    text(sum, 0, 370);
+    fill(220, 100, 133, 204);
+    text("Total: " + sum, 0, 370);
     
 }
 void mousePressed()
@@ -44,7 +44,8 @@ class Die //models one single dice cube
   rect(myX, myY,350,350);
   int numDot = (int) ((Math.random()*6)+ 1);
   if(numDot == 1){
-     ellipse(myX + 20, myY + 20, 10, 10);
+     
+    ellipse(myX + 20, myY + 20, 10, 10);
      sum++;
     } else
     
